@@ -1,0 +1,21 @@
+.rig-img-archive {
+    display: block;
+    width: auto;
+    height: 110%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+    padding: 0;
+}
+.rig-img-archive2{
+    display: block;
+	position: absolute;
+    display:block;
+    top: -75px;
+    width: 103%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+    padding: 0;
+}

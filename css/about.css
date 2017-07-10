@@ -1,0 +1,82 @@
+
+/*~~~~~~~~~~ ABOUT ~~~~~~~~~~*/
+/*.col-1, .col-2{
+float: left;
+}*/
+
+.main_body{
+	margin-top: 2.6em;
+}
+
+.col-1{
+	float: left;
+}
+.profile_img{
+	margin-left: 23%;
+}
+
+.profile_img img{
+	height: 320px;
+}
+
+.col-2{
+	width: 450px;
+	float: left;
+	margin-left: 8%;
+}
+
+.about_header{
+	font-family: Aileron-Thin;
+	font-size: 1.6em;
+	font-weight: normal;
+	text-align: center;
+}
+
+.about_text{
+	font-family: Aileron;
+	font-size: .7em;
+}
+
+.contact_container{
+	display: inline-block;
+	width: 100%;
+	margin-top: 10%;
+	border-top: 1px solid #aaa8a8;
+
+}
+
+.contact{
+	width: 20%;
+	margin-top: 3%;
+	margin-left: 27%;
+	margin-bottom: 2.5%;
+	text-align: center;
+	float: left;
+	display: inline-block;
+}
+
+.contact_header{
+	font-family: Aileron-Thin;
+	font-weight: lighter;
+	font-size: 1.2em;
+}
+
+.contact_text{
+	font-family: Aileron-Thin;
+	font-size: .65em;
+	margin-bottom: 2em;
+}
+
+.contact a{
+	font-family: Aileron-Light;
+	text-decoration: none;
+	font-size: .8em;
+	color: #031B69;
+}
+
+.calendar{
+	float: left;
+	margin-top: 3%;
+	margin-left: 10%;
+	height: 150px;
+}

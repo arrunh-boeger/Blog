@@ -1,0 +1,23 @@
+/*~~~~~~~~~~~ body ~~~~~~~~~~~*/
+.main_body{
+
+	height: 30%;
+	width: 100%;
+	margin: 4em 0 2em;
+}
+
+img{
+	display: inline-block;
+	height: 300px;
+	padding: 20px 10px 0px 10px;
+
+}
+/*.left_arrow{
+	float: left;
+	margin
+	height: 20px;
+}
+*/
+.down_button{
+	height: 35px;
+}

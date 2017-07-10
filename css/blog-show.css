@@ -1,0 +1,87 @@
+.post-show_text{
+	font-family: Aileron;
+	font-size: 13px;
+	width: 380px;
+	text-align: left;
+	margin: 0 auto;
+	margin-bottom: 16px;
+}
+
+.post-show_image{
+	height: 315px;
+	padding-top: 6px;
+	padding-bottom: 16px;
+}
+
+.camera-info{
+	font-family: Aileron-Light;
+	font-size: 11px;
+	margin: -8px auto 0;
+	color: #292828;
+}
+
+.map-comments{
+	display: inline-block;
+	margin: 0 auto 0;
+	font-family: Aileron-Light;
+	font-size: 10px;
+}
+
+.map{
+	height: 150px;
+	padding: 20px 30px 0 0;
+}
+
+.comments{
+	display: inline-block;
+	margin: -5px 0px 2px;
+	height: 80px;
+	width: 190px;
+	padding-left: 0;
+	border-radius: 2px;
+}
+
+.preview_button{
+	font-family: Aileron-Light;
+	background: none;
+    border: none;
+    margin-top: 10px;
+}
+
+.comment_button{
+	font-family: Aileron-Light;
+	color: white;
+	background-color: #AAA8A8;
+    border-radius: 4px;
+    border: 1px;
+    width: 67px;
+}
+
+.tags{
+	font-family: Aileron-Light;
+	font-size: 11px;
+	margin: 20px auto 0;
+	color: #292828;
+}
+
+.blog_links{
+	font-family: Aileron-Light;
+	color: #727272;
+	font-size: 11px;
+	margin: 10px auto;
+}
+.blog_links a{
+	font-family: Aileron-Light;
+	text-decoration: none;
+	color: #727272;
+	padding: 0 4px;
+}
+.blog_links i{
+	font-weight: normal;
+	font-style: normal;
+	padding-left: 2px;
+}
+
+#share{
+	padding-left: 12px;
+}
