@@ -1,0 +1,62 @@
+.container{
+	text-align: center;
+	padding: 0 20%;
+	margin-top: 10%;
+	font-family: Aileron;
+}
+
+.page-header{
+	border-bottom: none;
+	font-family: Aileron-Light;
+	margin-bottom: 0;
+}
+
+.col-md-4{
+	display: inline-block;
+	margin: 0 18px;
+
+}
+
+.col-md-6{
+	display: block;
+}
+
+label{
+	float: left;
+    font-family: Aileron-Light;
+    font-weight: lighter;
+    font-size: 13px;
+    padding-left: 24px;
+}
+.row{
+	margin: 5px auto;
+	width: 450px;
+}
+
+.button-group{
+	margin-top: 20px;
+}
+.btn{
+	width: 140px;
+	height: 25px;
+	padding: 0;
+	font-size: 12px;
+	border-radius: 2px;
+	font-weight: lighter;
+	margin: 0 5px;
+	background-color: #6d6d6d;
+	color: white;
+}
+
+.btn a{
+	color: black;
+}
+
+.esc-btn{
+	background-color: white;
+	border: 1px solid #ccc;
+}
+
+h6{
+	margin-top: 15px;
+}
