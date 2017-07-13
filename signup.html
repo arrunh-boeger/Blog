@@ -15,58 +15,97 @@
 		<h2>Sign Up</h2>
 	</div>
 
-<form name="myForm" action="/action_page_post.php" onsubmit="return validateForm()" method="post">
+<form id="sign-up_form" action="" method="post" role="form">
 
 	<div class="input-group input-group-sm col-md-4">
 	  <label>First Name</label>
-	  <input type="text" name="firstName" class="form-control" aria-describedby="First Name" required>
+	  <input type="text" id="firstName" class="form-control" aria-describedby="First Name" required>
 	</div>
 	<div class="input-group input-group-sm col-md-4">
 	  <label>Last Name</label>
-	  <input type="text" name="lastName" class="form-control" aria-describedby="Last Name">
+	  <input type="text" id="lastName" class="form-control" aria-describedby="Last Name">
 	</div>
 
 	<div class="input-group input-group-sm col-md-6 row">
 	  <label>Email</label>
-	  <input type="text" name="email" class="form-control" aria-describedby="Email">
+	  <input type="text" id="email" class="form-control" aria-describedby="Email">
 	</div>
 
 	  <div class="input-group input-group-sm col-md-6 row">
 	  <label>Password</label>
-	  <input type="text" name="password" class="form-control" aria-describedby="Email">
+	  <input type="password" id="password" class="form-control" aria-describedby="Email">
 	</div>
 
 	 <div class="input-group input-group-sm col-md-6 row">
 	  <label>Confirm Password</label>
-	  <input type="text" name="confirmPass" class="form-control" aria-describedby="Email">
+	  <input type="password" id="confirmPass" class="form-control" aria-describedby="Email">
 	</div>
-  </form>
-    <div class="button-group">
- 		<button type="submit" class="btn esc-btn">
+
+   <div class="button-group">
+ 		<button type="button" class="btn esc-btn">
  			<a href="index.html">Esc</a>
  		</button>
-  		<input type="button" name="submit" class="btn accept-btn" value="Accept">
+  		<input type="button" id="sign-up_btn" class="btn accept-btn" value="Accept">
  	</div>
  	<h6><a href="signin.html">Already a User?</a></h6>
+</form>
 
-
- 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
 <!-- validate forms -->
-<!--     <script>
-	function validateForm() {
-		var x = document.forms["myForm"]["fname"].value;
-		    if (x == "") {
-		        alert("Name must be filled out");
-		        return false;
-		    }
-	}
-	</script> -->
+    <script>
+
+    function validateText(id)
+    {
+    	if($("#"+id).val()==null || $("#"+id).val()=="")
+    	{
+    		var div = $("#"+id).closest("div");
+    		div.addClass("has-error");
+    		return false;
+    	}
+    	else
+    	{
+    		var div = $("#"+id).closest("div");
+    		div.removeClass("has-error");
+    		return true;
+    	}
+    }
+
+    $(document).ready(
+
+    	function()
+    	{
+    		$("#sign-up_btn").click(function()
+    			{
+    				if(!validateText("firstName"))
+    				{
+    					return false;
+    				}
+					if(!validateText("lastName"))
+    				{
+    					return false;
+    				}
+    				if(!validateText("email"))
+    				{
+    					return false;
+    				}
+    				if(!validateText("password"))
+    				{
+    					return false;
+    				}
+    				if(!validateText("confirmPass"))
+    				{
+    					return false;
+    				}
+
+    				$("form#sign-up_form").submit();
+
+    			});
+    	}
+    );
+	</script>
 </body>
 </html>
-
-
