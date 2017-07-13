@@ -6,9 +6,10 @@
 	margin: 4em 0 2em;
 }
 
-img{
+.indeximg{
 	display: inline-block;
 	height: 300px;
+	width: auto;
 	padding: 20px 10px 0px 10px;
 
 }
@@ -20,4 +21,26 @@ img{
 */
 .down_button{
 	height: 35px;
+}
+
+
+@media (max-width: 9000px) {
+    .indeximg {
+    	width: auto;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .indeximg {
+    	width: auto;
+        height: 250px;
+    }
+}
+
+@media (max-width: 895px) {
+    .indeximg {
+    	width: auto;
+        height: 250px;
+    }
 }
